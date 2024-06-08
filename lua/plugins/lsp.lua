@@ -10,6 +10,7 @@ return {
         function()
           vim.lsp.buf.hover()
         end,
+        desc = "LSP Hover",
       }
     end,
   },
