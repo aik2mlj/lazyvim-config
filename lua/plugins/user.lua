@@ -2,7 +2,7 @@ return {
   {
     "rebelot/kanagawa.nvim",
     opts = {
-      transparent = true,
+      -- transparent = true,
       colors = {
         theme = {
           all = {
@@ -11,6 +11,16 @@ return {
             },
           },
         },
+      },
+    },
+  },
+  {
+    "folke/tokyonight.nvim",
+    opts = {
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
       },
     },
   },
