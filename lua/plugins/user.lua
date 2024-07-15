@@ -24,4 +24,30 @@ return {
       },
     },
   },
+
+  {
+    "mikavilpas/yazi.nvim",
+    event = "VeryLazy",
+    keys = {
+      {
+        "<leader>o",
+        function()
+          require("yazi").yazi()
+        end,
+        desc = "Open the file manager",
+      },
+      {
+        -- Open in the current working directory
+        "<leader>cw",
+        function()
+          require("yazi").yazi(nil, vim.fn.getcwd())
+        end,
+        desc = "Open the file manager in nvim's working directory",
+      },
+    },
+    opts = {
+      floating_window_scaling_factor = 0.6,
+      yazi_floating_window_winblend = 20,
+    },
+  },
 }
