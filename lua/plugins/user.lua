@@ -2,7 +2,7 @@ return {
   {
     "rebelot/kanagawa.nvim",
     opts = {
-      -- transparent = true,
+      transparent = true,
       colors = {
         theme = {
           all = {
