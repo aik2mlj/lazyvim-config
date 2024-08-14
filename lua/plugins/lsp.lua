@@ -4,7 +4,7 @@ return {
     opts = function()
       local keys = require("lazyvim.plugins.lsp.keymaps").get()
       -- disable a keymap
-      keys[#keys + 1] = { "K", false }
+      keys[#keys + 1] = { "K", "5gk" }
       keys[#keys + 1] = {
         "<leader>k",
         function()
