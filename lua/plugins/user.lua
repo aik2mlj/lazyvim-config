@@ -50,4 +50,17 @@ return {
       yazi_floating_window_winblend = 20,
     },
   },
+  {
+    "MeanderingProgrammer/markdown.nvim",
+    opts = {
+      heading = {
+        sign = true,
+        icons = { "󰲡 ", "󰲣 ", "󰲥 ", "󰲧 ", "󰲩 ", "󰲫 " },
+      },
+      code = {
+        sign = true,
+        position = "right",
+      },
+    },
+  },
 }
