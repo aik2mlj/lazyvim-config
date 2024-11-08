@@ -48,7 +48,10 @@ return {
   },
   {
     "nvim-telescope/telescope.nvim",
-    -- change some options
+    keys = {
+      -- reserved for comment/uncomment
+      { "<leader>/", false },
+    },
     opts = {
       defaults = {
         mappings = {
