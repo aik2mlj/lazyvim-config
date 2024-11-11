@@ -8,8 +8,11 @@ vim.keymap.set({ "n", "x" }, "J", "5gj")
 vim.keymap.set({ "n", "x" }, "K", "5gk")
 vim.keymap.set({ "n", "x" }, "<leader>j", "J", { desc = "Join Lines" })
 
-vim.keymap.set({ "n", "i" }, "<M-h>", "<esc><cmd>bprevious<cr>", { desc = "Prev Buffer" })
-vim.keymap.set({ "n", "i" }, "<M-l>", "<esc><cmd>bnext<cr>", { desc = "Next Buffer" })
+vim.keymap.set({ "n", "i" }, "<M-h>", "<esc><cmd>BufferLineCyclePrev<cr>", { desc = "Prev Buffer" })
+vim.keymap.set({ "n", "i" }, "<M-l>", "<esc><cmd>BufferLineCycleNext<cr>", { desc = "Next Buffer" })
+vim.keymap.set({ "n", "i" }, "<M-p>", "<esc><cmd>b#<cr>", { desc = "Last Buffer" })
+vim.keymap.set({ "n", "i" }, "<M-H>", "<esc><cmd>BufferLineMovePrev<cr>", { desc = "Move buffer prev" })
+vim.keymap.set({ "n", "i" }, "<M-L>", "<esc><cmd>BufferLineMoveNext<cr>", { desc = "Move buffer next" })
 vim.keymap.set({ "n", "i" }, "<C-a>", "<esc>ggVG")
 vim.keymap.set({ "n", "i" }, "<C-q>", "<esc><cmd>q<cr>")
 
