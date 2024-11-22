@@ -18,6 +18,7 @@ return {
         tinymist = {
           settings = {
             exportPdf = "onType",
+            formatterMode = "typstyle",
           },
         },
       })
