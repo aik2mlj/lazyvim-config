@@ -47,6 +47,16 @@ return {
     end,
   },
   {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "fish",
+        "latex",
+        -- "typst",
+      },
+    },
+  },
+  {
     "nvim-telescope/telescope.nvim",
     keys = {
       -- reserved for comment/uncomment
