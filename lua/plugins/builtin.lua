@@ -37,6 +37,12 @@ return {
   --   },
   -- },
   {
+    "ibhagwan/fzf-lua",
+    keys = {
+      { "<leader>/", false },
+    },
+  },
+  {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
       window = {
