@@ -13,6 +13,8 @@ vim.g.neovide_transparency = 0.9
 vim.g.neovide_hide_mouse_when_typing = true
 vim.g.neovide_theme = "light"
 
+-- vim.g.snacks_animate = false
+
 if vim.g.neovide then
   vim.keymap.set("v", "<C-S-C>", '"+y') -- Copy
   vim.keymap.set("n", "<C-S-V>", '"+p') -- Paste normal mode

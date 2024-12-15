@@ -68,4 +68,11 @@ return {
       skip_next = [=[[%w%%%'%[%"%.%`]]=],
     },
   },
+  {
+    "snacks.nvim",
+    opts = {
+      -- disable scroll animation
+      scroll = { enabled = false },
+    },
+  },
 }
