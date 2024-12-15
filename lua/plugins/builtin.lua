@@ -56,27 +56,27 @@ return {
       },
     },
   },
-  {
-    "nvim-telescope/telescope.nvim",
-    keys = {
-      -- reserved for comment/uncomment
-      { "<leader>/", false },
-    },
-    opts = {
-      defaults = {
-        mappings = {
-          i = {
-            ["<C-j>"] = "move_selection_next",
-            ["<C-k>"] = "move_selection_previous",
-          },
-        },
-        -- layout_strategy = "horizontal",
-        -- layout_config = { prompt_position = "top" },
-        -- sorting_strategy = "ascending",
-        -- winblend = 0,
-      },
-    },
-  },
+  -- {
+  --   "nvim-telescope/telescope.nvim",
+  --   keys = {
+  --     -- reserved for comment/uncomment
+  --     { "<leader>/", false },
+  --   },
+  --   opts = {
+  --     defaults = {
+  --       mappings = {
+  --         i = {
+  --           ["<C-j>"] = "move_selection_next",
+  --           ["<C-k>"] = "move_selection_previous",
+  --         },
+  --       },
+  --       -- layout_strategy = "horizontal",
+  --       -- layout_config = { prompt_position = "top" },
+  --       -- sorting_strategy = "ascending",
+  --       -- winblend = 0,
+  --     },
+  --   },
+  -- },
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
