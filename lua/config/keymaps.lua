@@ -13,7 +13,6 @@ vim.keymap.set({ "n", "i" }, "<M-l>", "<esc><cmd>BufferLineCycleNext<cr>", { des
 vim.keymap.set({ "n", "i" }, "<M-p>", "<esc><cmd>b#<cr>", { desc = "Last Buffer" })
 vim.keymap.set({ "n", "i" }, "<M-H>", "<esc><cmd>BufferLineMovePrev<cr>", { desc = "Move buffer prev" })
 vim.keymap.set({ "n", "i" }, "<M-L>", "<esc><cmd>BufferLineMoveNext<cr>", { desc = "Move buffer next" })
-vim.keymap.set({ "n", "i" }, "<C-a>", "<esc>ggVG")
 vim.keymap.set({ "n", "i" }, "<C-q>", "<esc><cmd>q<cr>")
 
 vim.keymap.set("n", "<M-J>", ":t .<CR>", { silent = true })
@@ -27,6 +26,7 @@ end, { desc = "Delete Buffer" })
 vim.keymap.set("n", "U", "<c-r>")
 vim.keymap.set("n", "<leader>r", ":%s//g<Left><Left>", { desc = "Global Replace" })
 vim.keymap.set("n", "<leader>/", "gcc", { desc = "Toggle Comment", remap = true })
+vim.keymap.set("n", "<leader>a", "<esc>ggVG", { desc = "Select All" })
 
 vim.keymap.set("x", "<M-J>", ":t'><CR>gv", { silent = true })
 vim.keymap.set("x", "<M-K>", ":t-1<CR>gv", { silent = true })
