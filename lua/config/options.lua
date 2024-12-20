@@ -5,7 +5,8 @@
 vim.opt.scrolloff = 15
 vim.opt.relativenumber = false
 vim.opt.spell = false
--- vim.opt.tabstop = 4 -- A TAB character looks like 4 spaces
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4 -- A TAB character looks like 4 spaces
 vim.opt.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB character
 vim.opt.guifont = "FiraCode Nerd Font:h11"
 
