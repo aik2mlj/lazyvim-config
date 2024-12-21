@@ -1,18 +1,22 @@
 return {
   {
     "rebelot/kanagawa.nvim",
-    opts = {
-      transparent = true,
-      colors = {
-        theme = {
-          all = {
-            ui = {
-              bg_gutter = "none",
+    opts = function()
+      if not vim.g.neovide then
+        return {
+          transparent = true,
+          colors = {
+            theme = {
+              all = {
+                ui = {
+                  bg_gutter = "none",
+                },
+              },
             },
           },
-        },
-      },
-    },
+        }
+      end
+    end,
   },
   {
     "folke/tokyonight.nvim",

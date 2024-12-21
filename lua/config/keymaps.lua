@@ -34,3 +34,11 @@ vim.keymap.set("x", "<leader>f", 'y<ESC>/<c-r>"<CR>', { desc = "Search Selected"
 vim.keymap.set("x", "<leader>F", "<cmd>Telescope grep_string<cr>", { desc = "Global Search Selected" })
 vim.keymap.set("x", "<leader>r", ":s//g<Left><Left>", { desc = "Replace in Selected" })
 vim.keymap.set("x", "<leader>/", "gc", { desc = "Toggle Comment", remap = true })
+
+if vim.g.neovide then
+  vim.keymap.set("v", "<C-S-C>", '"+y') -- Copy
+  vim.keymap.set("n", "<C-S-V>", '"+p') -- Paste normal mode
+  vim.keymap.set("v", "<C-S-V>", '"+p') -- Paste visual mode
+  vim.keymap.set("c", "<C-S-V>", "<C-R>+") -- Paste command mode
+  vim.keymap.set("i", "<C-S-V>", '<ESC>"+pi') -- Paste insert mode
+end
