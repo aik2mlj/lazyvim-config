@@ -83,4 +83,42 @@ return {
       { "<leader>p", "<cmd>PasteImage<cr>", desc = "Paste image from system clipboard" },
     },
   },
+  {
+    "olimorris/codecompanion.nvim",
+    config = function()
+      require("codecompanion").setup({
+        adapters = {
+          deepseek = function()
+            return require("codecompanion.adapters").extend("deepseek", {
+              schema = {
+                model = {
+                  default = "deepseek-chat",
+                },
+              },
+            })
+          end,
+        },
+        strategies = {
+          -- Change the default chat adapter
+          chat = {
+            adapter = "deepseek",
+          },
+        },
+      })
+    end,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    keys = {
+      { "<leader>Cc", "<cmd>CodeCompanionChat Toggle<cr>", mode = { "n", "v" }, desc = "Toggle a chat buffer" },
+      {
+        "<leader>CA",
+        "<cmd>CodeCompanionChat Add<cr>",
+        mode = "v",
+        desc = "Add visually selected chat to the current chat buffer",
+      },
+      { "<leader>Ca", "<cmd>CodeCompanionActions<cr>", mode = { "n", "v" }, desc = "Show CodeCompanion actions" },
+    },
+  },
 }
