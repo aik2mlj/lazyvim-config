@@ -10,7 +10,7 @@ vim.opt.tabstop = 4 -- A TAB character looks like 4 spaces
 vim.opt.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB character
 vim.opt.guifont = "FiraCode Nerd Font:h11"
 
-vim.g.neovide_transparency = 0.9
+vim.g.neovide_opacity = 0.9
 vim.g.neovide_hide_mouse_when_typing = true
 vim.g.neovide_theme = "light"
 
