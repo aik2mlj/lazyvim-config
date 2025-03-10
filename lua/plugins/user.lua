@@ -35,17 +35,13 @@ return {
     keys = {
       {
         "<leader>o",
-        function()
-          require("yazi").yazi()
-        end,
-        desc = "Open the file manager",
+        "<cmd>Yazi toggle<cr>",
+        desc = "Resume the last yazi session",
       },
       {
         -- Open in the current working directory
         "<leader>cw",
-        function()
-          require("yazi").yazi(nil, vim.fn.getcwd())
-        end,
+        "<cmd>Yazi cwd<cr>",
         desc = "Open the file manager in nvim's working directory",
       },
     },
