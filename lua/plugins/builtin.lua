@@ -10,8 +10,8 @@ return {
     opts = {
       ensure_installed = {
         "fish",
-        "latex",
-        -- "typst",
+        -- "latex",
+        "typst",
       },
     },
   },
