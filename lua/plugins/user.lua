@@ -117,4 +117,10 @@ return {
       { "<leader>Ca", "<cmd>CodeCompanionActions<cr>", mode = { "n", "v" }, desc = "Show CodeCompanion actions" },
     },
   },
+  {
+    "benomahony/uv.nvim",
+    opts = {
+      picker_integration = true,
+    },
+  },
 }
