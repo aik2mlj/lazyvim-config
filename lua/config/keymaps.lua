@@ -31,7 +31,7 @@ vim.keymap.set("n", "<leader>a", "<esc>ggVG", { desc = "Select All" })
 vim.keymap.set("x", "<M-J>", ":t'><CR>gv", { silent = true })
 vim.keymap.set("x", "<M-K>", ":t-1<CR>gv", { silent = true })
 vim.keymap.set("x", "<leader>f", 'y<ESC>/<c-r>"<CR>', { desc = "Search Selected" })
-vim.keymap.set("x", "<leader>F", "<cmd>Telescope grep_string<cr>", { desc = "Global Search Selected" })
+vim.keymap.set("x", "<leader>F", "<cmd>FzfLua grep_visual<cr>", { desc = "Global Search Selected" })
 vim.keymap.set("x", "<leader>r", ":s//g<Left><Left>", { desc = "Replace in Selected" })
 vim.keymap.set("x", "<leader>/", "gc", { desc = "Toggle Comment", remap = true })
 
