@@ -15,3 +15,5 @@ vim.g.neovide_hide_mouse_when_typing = true
 vim.g.neovide_theme = "light"
 
 -- vim.g.snacks_animate = false
+-- vim.g.clipboard = "osc52"
+vim.opt.clipboard = "unnamedplus"
