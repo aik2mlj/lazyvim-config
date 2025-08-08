@@ -137,4 +137,5 @@ return {
       })
     end,
   },
+  { "h-hg/fcitx.nvim" },
 }
