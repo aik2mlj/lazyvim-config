@@ -73,7 +73,7 @@ return {
     },
   },
   {
-    "echasnovski/mini.pairs",
+    "nvim-mini/mini.pairs",
     opts = {
       skip_next = [=[[%w%%%'%[%"%.%`]]=],
     },
