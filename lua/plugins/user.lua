@@ -31,7 +31,11 @@ return {
 
   {
     "mikavilpas/yazi.nvim",
+    version = "*", -- use the latest stable version
     event = "VeryLazy",
+    dependencies = {
+      { "nvim-lua/plenary.nvim", lazy = true },
+    },
     keys = {
       {
         "<leader>o",
@@ -47,7 +51,7 @@ return {
     },
     opts = {
       floating_window_scaling_factor = 0.6,
-      yazi_floating_window_winblend = 20,
+      -- yazi_floating_window_winblend = 100,
     },
   },
   {
