@@ -21,17 +21,17 @@ return {
             formatterMode = "typstyle",
           },
         },
-        -- basedpyright = {
-        --   settings = {
-        --     basedpyright = {
-        --       analysis = {
-        --         typeCheckingMode = "basic",
-        --         -- ignore = { "*" },
-        --       },
-        --       disableOrganizeImports = true,
-        --     },
-        --   },
-        -- },
+        basedpyright = {
+          settings = {
+            basedpyright = {
+              analysis = {
+                typeCheckingMode = "basic",
+                -- ignore = { "*" },
+              },
+              disableOrganizeImports = true,
+            },
+          },
+        },
       },
     },
   },

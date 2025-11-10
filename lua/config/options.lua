@@ -17,3 +17,7 @@ vim.g.neovide_theme = "light"
 -- vim.g.snacks_animate = false
 -- vim.g.clipboard = "osc52"
 vim.opt.clipboard = "unnamedplus"
+
+vim.g.lazyvim_python_lsp = "basedpyright"
+-- vim.g.lazyvim_python_lsp = "pyrefly"
+-- vim.g.lazyvim_python_lsp = "ty"
