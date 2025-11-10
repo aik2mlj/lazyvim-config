@@ -142,4 +142,17 @@ return {
     end,
   },
   { "h-hg/fcitx.nvim" },
+  {
+    "rachartier/tiny-inline-diagnostic.nvim",
+    event = "VeryLazy",
+    priority = 1000,
+    opts = {
+      options = {
+        show_source = {
+          enabled = true, -- Enable showing source names
+          if_many = true, -- Only show source if multiple sources exist for the same diagnostic
+        },
+      },
+    },
+  },
 }
