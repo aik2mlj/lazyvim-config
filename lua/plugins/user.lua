@@ -127,20 +127,20 @@ return {
       picker_integration = true,
     },
   },
-  {
-    "greggh/claude-code.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim", -- Required for git operations
-    },
-    config = function()
-      require("claude-code").setup({
-        window = {
-          split_ratio = 0.4,
-          position = "vertical",
-        },
-      })
-    end,
-  },
+  -- {
+  --   "greggh/claude-code.nvim",
+  --   dependencies = {
+  --     "nvim-lua/plenary.nvim", -- Required for git operations
+  --   },
+  --   config = function()
+  --     require("claude-code").setup({
+  --       window = {
+  --         split_ratio = 0.4,
+  --         position = "vertical",
+  --       },
+  --     })
+  --   end,
+  -- },
   { "h-hg/fcitx.nvim" },
   {
     "rachartier/tiny-inline-diagnostic.nvim",
