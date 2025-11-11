@@ -155,4 +155,47 @@ return {
       },
     },
   },
+  {
+    "OscarCreator/rsync.nvim",
+    build = "make",
+    dependencies = "nvim-lua/plenary.nvim",
+    opts = {},
+    specs = {
+      {
+        "folke/which-key.nvim",
+        opts = {
+          spec = {
+            { "<leader>t", group = "Rsync Upload / Download", icon = { color = "green", icon = "" } },
+            {
+              "<leader>td",
+              "<cmd>RsyncDownFile<cr>",
+              desc = "Sync file from remote server",
+              icon = { color = "green", icon = "󰇚" },
+            },
+            {
+              "<leader>tD",
+              "<cmd>RsyncDown<cr>",
+              desc = "Sync all files from remote server",
+              icon = { color = "blue", icon = "󰇚" },
+            },
+            {
+              "<leader>tu",
+              "<cmd>RsyncUpFile<cr>",
+              desc = "Upload file to remote server",
+              icon = { color = "green", icon = "󰕒" },
+            },
+            {
+              "<leader>tU",
+              "<cmd>RsyncUp<cr>",
+              desc = "Upload all files to remote server",
+              icon = { color = "blue", icon = "󰕒" },
+            },
+            { "<leader>tl", "<cmd>RsyncLog<cr>", desc = "Open log file for rsync.nvim" },
+            { "<leader>tc", "<cmd>RsyncProjectConfig<cr>", desc = "Reload current project config" },
+            { "<leader>tt", "<cmd>RsyncSaveSync<cr>", desc = "Toggle sync when saving" },
+          },
+        },
+      },
+    },
+  },
 }
