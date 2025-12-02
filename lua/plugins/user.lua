@@ -68,14 +68,6 @@ return {
     },
   },
   {
-    "chomosuke/typst-preview.nvim",
-    ft = "typst",
-    version = "0.3.*",
-    build = function()
-      require("typst-preview").update()
-    end,
-  },
-  {
     "HakonHarnes/img-clip.nvim",
     event = "VeryLazy",
     -- opts = {},
