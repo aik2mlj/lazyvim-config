@@ -222,4 +222,8 @@ return {
   --     })
   --   end,
   -- },
+  {
+    "lowitea/aw-watcher.nvim",
+    opts = {},
+  },
 }
