@@ -11,6 +11,10 @@ return {
       ensure_installed = {
         "fish",
       },
+      indent = {
+        enable = true,
+        disable = { "typst" },
+      },
     },
   },
   {
