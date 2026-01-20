@@ -87,4 +87,17 @@ return {
       scroll = { enabled = false },
     },
   },
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters = {
+        chuck = {
+          command = "chuckfmt",
+        },
+      },
+      formatters_by_ft = {
+        chuck = { "chuck" },
+      },
+    },
+  },
 }
