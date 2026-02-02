@@ -227,4 +227,34 @@ return {
     dependencies = { "MunifTanjim/nui.nvim" },
     cmd = "CodeDiff",
   },
+  {
+    "milanglacier/minuet-ai.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {
+      provider = "openai_fim_compatible",
+      provider_options = {
+        openai_fim_compatible = {
+          api_key = "DEEPSEEK_API_KEY",
+          name = "Deepseek",
+          -- model and end_point default to deepseek-chat and
+          -- https://api.deepseek.com/beta/completions respectively
+          optional = {
+            max_tokens = 256,
+            top_p = 0.9,
+          },
+        },
+      },
+      virtualtext = {
+        auto_trigger_ft = { "*" },
+        auto_trigger_ignore_ft = { "conf", "sshconfig" },
+        keymap = {
+          accept = "<A-A>",
+          accept_line = "<A-a>",
+          prev = "<A-[>",
+          next = "<A-]>",
+          dismiss = "<A-e>",
+        },
+      },
+    },
+  },
 }
