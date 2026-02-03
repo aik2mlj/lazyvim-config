@@ -36,6 +36,11 @@ vim.keymap.set("x", "<leader>F", "<cmd>FzfLua grep_visual<cr>", { desc = "Global
 vim.keymap.set("x", "<leader>r", ":s//g<Left><Left>", { desc = "Replace in Selected" })
 vim.keymap.set("x", "<leader>/", "gc", { desc = "Toggle Comment", remap = true })
 
+-- terminal in cwd by default
+vim.keymap.set({ "n", "t" }, "<c-/>", function()
+  Snacks.terminal()
+end, { desc = "Terminal (cwd)" })
+
 if vim.g.neovide then
   vim.keymap.set("v", "<C-S-C>", '"+y') -- Copy
   vim.keymap.set("n", "<C-S-V>", '"+p') -- Paste normal mode
