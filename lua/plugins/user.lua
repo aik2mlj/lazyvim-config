@@ -232,6 +232,8 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {
       provider = "openai_fim_compatible",
+      throttle = 1500, -- Increase to reduce costs and avoid rate limits
+      debounce = 600, -- Increase to reduce costs and avoid rate limits
       provider_options = {
         openai_fim_compatible = {
           api_key = "DEEPSEEK_API_KEY",
@@ -246,7 +248,22 @@ return {
       },
       virtualtext = {
         auto_trigger_ft = { "*" },
-        auto_trigger_ignore_ft = { "conf", "sshconfig", "dosini" },
+        -- do not use ai for personal & sensitive files
+        auto_trigger_ignore_ft = {
+          "conf",
+          "sshconfig",
+          "sshdconfig",
+          "dosini",
+          "dotenv",
+          "netrc",
+          "npmrc",
+          "gitconfig",
+          "pem",
+          "passwd",
+          "gpg",
+          "terraform",
+          "hcl",
+        },
         keymap = {
           accept = "<A-A>",
           accept_line = "<A-a>",
