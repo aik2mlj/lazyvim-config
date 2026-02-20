@@ -12,7 +12,7 @@ vim.opt.guifont = "FiraCode Nerd Font:h11"
 
 vim.g.neovide_opacity = 0.9
 vim.g.neovide_hide_mouse_when_typing = true
-vim.g.neovide_theme = "light"
+vim.g.neovide_theme = "auto"
 
 -- vim.g.snacks_animate = false
 -- vim.g.clipboard = "osc52"
