@@ -274,4 +274,10 @@ return {
       },
     },
   },
+  {
+    "chomosuke/typst-preview.nvim",
+    opts = {
+      invert_colors = "auto",
+    },
+  },
 }
