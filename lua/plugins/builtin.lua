@@ -54,18 +54,18 @@ return {
       { "<leader>/", false },
     },
   },
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    opts = {
-      window = {
-        width = 30,
-        mappings = {
-          ["l"] = "open",
-          ["h"] = "close_node",
-        },
-      },
-    },
-  },
+  -- {
+  --   "nvim-neo-tree/neo-tree.nvim",
+  --   opts = {
+  --     window = {
+  --       width = 30,
+  --       mappings = {
+  --         ["l"] = "open",
+  --         ["h"] = "close_node",
+  --       },
+  --     },
+  --   },
+  -- },
   {
     "mfussenegger/nvim-lint",
     opts = {
