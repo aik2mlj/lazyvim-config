@@ -1,27 +1,23 @@
 return {
   {
     "rebelot/kanagawa.nvim",
-    opts = function()
-      if not vim.g.neovide then
-        return {
-          transparent = true,
-          colors = {
-            theme = {
-              all = {
-                ui = {
-                  bg_gutter = "none",
-                },
-              },
+    opts = {
+      transparent = not vim.g.neovide,
+      colors = {
+        theme = {
+          all = {
+            ui = {
+              bg_gutter = "none",
             },
           },
-        }
-      end
-    end,
+        },
+      },
+    },
   },
   {
     "folke/tokyonight.nvim",
     opts = {
-      transparent = true,
+      transparent = not vim.g.neovide,
       styles = {
         sidebars = "transparent",
         floats = "transparent",
@@ -147,49 +143,49 @@ return {
       },
     },
   },
-  {
-    "OscarCreator/rsync.nvim",
-    build = "make",
-    dependencies = "nvim-lua/plenary.nvim",
-    opts = {},
-    specs = {
-      {
-        "folke/which-key.nvim",
-        opts = {
-          spec = {
-            { "<leader>t", group = "Rsync Upload / Download", icon = { color = "green", icon = "" } },
-            {
-              "<leader>td",
-              "<cmd>RsyncDownFile<cr>",
-              desc = "Sync file from remote server",
-              icon = { color = "green", icon = "󰇚" },
-            },
-            {
-              "<leader>tD",
-              "<cmd>RsyncDown<cr>",
-              desc = "Sync all files from remote server",
-              icon = { color = "blue", icon = "󰇚" },
-            },
-            {
-              "<leader>tu",
-              "<cmd>RsyncUpFile<cr>",
-              desc = "Upload file to remote server",
-              icon = { color = "green", icon = "󰕒" },
-            },
-            {
-              "<leader>tU",
-              "<cmd>RsyncUp<cr>",
-              desc = "Upload all files to remote server",
-              icon = { color = "blue", icon = "󰕒" },
-            },
-            { "<leader>tl", "<cmd>RsyncLog<cr>", desc = "Open log file for rsync.nvim" },
-            { "<leader>tc", "<cmd>RsyncProjectConfig<cr>", desc = "Reload current project config" },
-            { "<leader>tt", "<cmd>RsyncSaveSync<cr>", desc = "Toggle sync when saving" },
-          },
-        },
-      },
-    },
-  },
+  -- {
+  --   "OscarCreator/rsync.nvim",
+  --   build = "make",
+  --   dependencies = "nvim-lua/plenary.nvim",
+  --   opts = {},
+  --   specs = {
+  --     {
+  --       "folke/which-key.nvim",
+  --       opts = {
+  --         spec = {
+  --           { "<leader>t", group = "Rsync Upload / Download", icon = { color = "green", icon = "" } },
+  --           {
+  --             "<leader>td",
+  --             "<cmd>RsyncDownFile<cr>",
+  --             desc = "Sync file from remote server",
+  --             icon = { color = "green", icon = "󰇚" },
+  --           },
+  --           {
+  --             "<leader>tD",
+  --             "<cmd>RsyncDown<cr>",
+  --             desc = "Sync all files from remote server",
+  --             icon = { color = "blue", icon = "󰇚" },
+  --           },
+  --           {
+  --             "<leader>tu",
+  --             "<cmd>RsyncUpFile<cr>",
+  --             desc = "Upload file to remote server",
+  --             icon = { color = "green", icon = "󰕒" },
+  --           },
+  --           {
+  --             "<leader>tU",
+  --             "<cmd>RsyncUp<cr>",
+  --             desc = "Upload all files to remote server",
+  --             icon = { color = "blue", icon = "󰕒" },
+  --           },
+  --           { "<leader>tl", "<cmd>RsyncLog<cr>", desc = "Open log file for rsync.nvim" },
+  --           { "<leader>tc", "<cmd>RsyncProjectConfig<cr>", desc = "Reload current project config" },
+  --           { "<leader>tt", "<cmd>RsyncSaveSync<cr>", desc = "Toggle sync when saving" },
+  --         },
+  --       },
+  --     },
+  --   },
+  -- },
   -- {
   --   "inhesrom/remote-ssh.nvim",
   --   branch = "master",
